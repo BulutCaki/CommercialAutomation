@@ -50,6 +50,7 @@ namespace CommercialAutomation
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.companyinfo = new DevExpress.XtraTab.XtraTabPage();
             this.groupControl6 = new DevExpress.XtraEditors.GroupControl();
+            this.clearButton = new DevExpress.XtraEditors.SimpleButton();
             this.updateCustomer = new DevExpress.XtraEditors.SimpleButton();
             this.deleteCustomer = new DevExpress.XtraEditors.SimpleButton();
             this.saveButton = new DevExpress.XtraEditors.SimpleButton();
@@ -87,7 +88,6 @@ namespace CommercialAutomation
             this.label4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.specialCode = new DevExpress.XtraTab.XtraTabControl();
-            this.clearButton = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             this.xtraTabPage2.SuspendLayout();
@@ -134,7 +134,7 @@ namespace CommercialAutomation
             // 
             // gridControl1
             // 
-            this.gridControl1.Location = new System.Drawing.Point(2, 12);
+            this.gridControl1.Location = new System.Drawing.Point(-169, -187);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.Size = new System.Drawing.Size(1615, 1048);
@@ -321,6 +321,18 @@ namespace CommercialAutomation
             this.groupControl6.TabIndex = 31;
             this.groupControl6.Text = "groupControl6";
             this.groupControl6.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl6_Paint);
+            // 
+            // clearButton
+            // 
+            this.clearButton.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.clearButton.Appearance.Options.UseFont = true;
+            this.clearButton.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("clearButton.ImageOptions.Image")));
+            this.clearButton.Location = new System.Drawing.Point(104, 371);
+            this.clearButton.Name = "clearButton";
+            this.clearButton.Size = new System.Drawing.Size(114, 36);
+            this.clearButton.TabIndex = 33;
+            this.clearButton.Text = "Temizle";
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // updateCustomer
             // 
@@ -708,18 +720,6 @@ namespace CommercialAutomation
             this.companyinfo,
             this.xtraTabPage2});
             this.specialCode.TextChanged += new System.EventHandler(this.xtraTabControl1_TextChanged);
-            // 
-            // clearButton
-            // 
-            this.clearButton.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.clearButton.Appearance.Options.UseFont = true;
-            this.clearButton.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("clearButton.ImageOptions.Image")));
-            this.clearButton.Location = new System.Drawing.Point(104, 371);
-            this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(114, 36);
-            this.clearButton.TabIndex = 33;
-            this.clearButton.Text = "Temizle";
-            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // CompaniesForm
             // 
